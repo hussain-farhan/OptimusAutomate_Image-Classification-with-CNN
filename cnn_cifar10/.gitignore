@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Dataset cache
+data/*.npz
+data/cifar-10-batches-py/
+
+# Trained model and generated outputs
+outputs/*.keras
+outputs/*.h5
+outputs/history.pkl
+outputs/*.png
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
