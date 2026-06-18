@@ -25,9 +25,9 @@ def build_cnn(input_shape=(32, 32, 3), num_classes=10):
         An uncompiled keras.Sequential model.
     """
     model = keras.Sequential([
+         layers.Input(shape=input_shape),
         # Block 1
-        layers.Conv2D(32, (3, 3), padding="same", activation="relu",
-                      input_shape=input_shape),
+        layers.Conv2D(32, (3, 3), padding="same", activation="relu"),
         layers.BatchNormalization(),
         layers.Conv2D(32, (3, 3), padding="same", activation="relu"),
         layers.BatchNormalization(),
